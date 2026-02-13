@@ -652,12 +652,13 @@ body {
     min-width: 330px;
     height: 500px;
     background-color: #3d2944;
-
     border-radius: 20px;
     transition: transform 0.3s ease;
     padding: 15px;
     -webkit-box-shadow: 5px 5px 15px 5px #000000;
     box-shadow: 5px 5px 15px 5px #000000;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
      
 
 }
@@ -665,6 +666,8 @@ body {
 .projetos-cards-content {
     display: flex;
     justify-content: center;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
 
 }
 
