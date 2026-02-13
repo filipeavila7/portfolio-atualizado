@@ -311,13 +311,15 @@ body {
     -webkit-box-shadow: 5px 5px 15px 5px #000000;
     box-shadow: 5px 5px 15px 5px #000000;
     transition: transform 0.5s ease;
+    
 
 
 
 }
 
 .curriculo:hover {
-    transform: scale(1.03);
+    transform: scale(0.95);
+    background-color: #2a1c2f;
 }
 
 .curriculo a {
@@ -330,6 +332,8 @@ body {
     flex-direction: column;
     gap: 10px;
     width: 100%;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 
 .curriculo a img {
@@ -429,6 +433,8 @@ body {
 
 .card-content img {
     width: 150px;
+     user-select: none;
+    -webkit-user-drag: none;
 }
 
 
@@ -653,6 +659,8 @@ body {
     padding: 15px;
     -webkit-box-shadow: 5px 5px 15px 5px #000000;
     box-shadow: 5px 5px 15px 5px #000000;
+     user-select: none;
+    -webkit-user-drag: none;
 
 }
 
@@ -682,6 +690,8 @@ body {
     display: block;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+     user-select: none;
+    -webkit-user-drag: none;
 }
 
 
