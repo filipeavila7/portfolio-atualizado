@@ -171,7 +171,7 @@ body {
 
 .inicio-content h1 {
     font-size: 90px;
-    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.9) ;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.9);
 
 }
 
@@ -194,7 +194,7 @@ body {
     text-shadow:
         0 0 10px #bc00c9,
         0 0 5px #000000;
-  
+
 
 }
 
@@ -244,11 +244,13 @@ body {
 
 
 .sobre-section {
-    height: 1000px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-bottom: 100px;
+    padding-top: 100px;
 
 }
 
@@ -261,7 +263,7 @@ body {
     justify-content: center;
     background-color: transparent;
     border-radius: 30px;
-    
+
 
 }
 
@@ -281,32 +283,32 @@ body {
     text-align: center;
     color: #fff6ff;
     font-size: 60px;
-    text-shadow: 0 0 10px #999999 ;
+    text-shadow: 0 0 10px #999999;
 }
 
-.texto{
+.texto {
     width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
-    min-width: 1000px;
     flex-direction: column;
+    justify-content: center;
     background-color: #3d2944;
     border-radius: 20px;
     padding: 20px;
-    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
-box-shadow: 5px 5px 15px 5px #000000;
-    
+    box-shadow: 5px 5px 15px 5px #000000;
 }
 
 
-.curriculo{
-    background-color:  #3d2944;
+
+.curriculo {
+    background-color: #3d2944;
     width: 100%;
     display: flex;
     justify-content: center;
     padding: 20px;
     border-radius: 20px;
-    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    -webkit-box-shadow: 5px 5px 15px 5px #000000;
     box-shadow: 5px 5px 15px 5px #000000;
     transition: transform 0.5s ease;
 
@@ -314,15 +316,15 @@ box-shadow: 5px 5px 15px 5px #000000;
 
 }
 
-.curriculo:hover{
+.curriculo:hover {
     transform: scale(1.03);
 }
 
-.curriculo a{
+.curriculo a {
     text-decoration: none;
     color: #fff6ff;
     text-shadow: 0 0 10px #999999;
-    font-size: 25px;
+    font-size: clamp(18px, 3vw, 25px);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -330,13 +332,13 @@ box-shadow: 5px 5px 15px 5px #000000;
     width: 100%;
 }
 
-.curriculo a img{
+.curriculo a img {
     width: 40px;
 }
 
 .sobre-content p {
     color: #fff6ff;
-    font-size: 25px;
+    font-size: clamp(18px, 3vw, 25px);
     margin: 20px;
     text-shadow: 0 0 10px #999999;
 
@@ -360,6 +362,9 @@ box-shadow: 5px 5px 15px 5px #000000;
 .habilidades-container {
     width: 100%;
     margin-top: 70px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 
 }
 
@@ -373,6 +378,7 @@ box-shadow: 5px 5px 15px 5px #000000;
 
 .habilidades-content {
     width: 100%;
+    max-width: 1500px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -392,15 +398,15 @@ box-shadow: 5px 5px 15px 5px #000000;
     justify-content: center;
     align-items: center;
     transition: transform 0.3s ease;
-    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
-box-shadow: 5px 5px 15px 5px #000000;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: 5px 5px 15px 5px #000000;
 
 }
 
 
 .card:hover {
     transform: scale(0.92);
-    
+
 }
 
 .card-content {
@@ -437,6 +443,7 @@ box-shadow: 5px 5px 15px 5px #000000;
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 0 50px 0 50px;
 }
 
 .formacao-section h2 {
@@ -448,7 +455,8 @@ box-shadow: 5px 5px 15px 5px #000000;
 }
 
 .formacao-container {
-    width: 1250px;
+    width: 100%;
+    max-width: 1000px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -456,14 +464,14 @@ box-shadow: 5px 5px 15px 5px #000000;
 }
 
 .formacao-card {
-    background-color:#3d2944;
+    background-color: #3d2944;
     width: 100%;
-    height: 270px;
+
     border-radius: 25px;
     padding: 40px;
     transition: transform 0.3s ease;
-    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
-box-shadow: 5px 5px 15px 5px #000000;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: 5px 5px 15px 5px #000000;
 }
 
 .formacao-card:hover {
@@ -481,19 +489,20 @@ box-shadow: 5px 5px 15px 5px #000000;
 
 
 .formacao-card-content h3 {
-    font-size: 30px;
+    font-size: clamp(24px, 3vw, 30px);
+    ;
     color: #fff6ff;
     text-shadow: 0 0 10px #c2c2c2;
-    
+
 }
 
 .formacao-card-content span {
     font-size: 16px;
-    color: #da6bff ;
+    color: #da6bff;
 }
 
 .formacao-card-content p {
-    font-size: 17px;
+    font-size: clamp(17px, 3vw, 19px);
 }
 
 .certificados-section {
@@ -609,6 +618,7 @@ box-shadow: 5px 5px 15px 5px #000000;
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 100px;
 }
 
 .projetos-section h2 {
@@ -622,24 +632,27 @@ box-shadow: 5px 5px 15px 5px #000000;
 .projetos-container {
     width: 100%;
     margin-top: 70px;
-    min-width: 1000px;
+    max-width: 1400px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 32px;
+    padding: 0 50px 0 50px;
 }
 
 .projetos-cards {
     cursor: pointer;
     width: 520px;
+    min-width: 330px;
     height: 500px;
-    background-color: #3d2944;;
+    background-color: #3d2944;
+
     border-radius: 20px;
     transition: transform 0.3s ease;
     padding: 15px;
-    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
-box-shadow: 5px 5px 15px 5px #000000;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: 5px 5px 15px 5px #000000;
 
 }
 
@@ -728,7 +741,8 @@ box-shadow: 5px 5px 15px 5px #000000;
 }
 
 .modal-content {
-    background-color: #3d2944;;
+    background-color: #3d2944;
+    ;
     border-radius: 15px;
     padding: 35px;
     width: 1000px;
@@ -785,7 +799,7 @@ box-shadow: 5px 5px 15px 5px #000000;
 
 .contato-section {
     width: 100%;
-    height: 900px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -921,19 +935,21 @@ textarea::placeholder {
 }
 
 .social-links1 a:hover {
-    color: rgb(255, 0, 162);
-    text-shadow: 0 0 10px #ff00a2, 0 0 20px #000000;
+    color: #bc00ff;
+    text-shadow: 0 0 10px #bc00ff, 0 0 20px #000000;
 }
 
 
 .rodape {
     margin-top: 100px;
     width: 100%;
-    height: 200px;
-    background-color: rgb(31, 0, 31);
+    height: 100px;
+    background-color: #3d2944;
     padding: 30px;
     display: flex;
     justify-content: center;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: 5px 5px 15px 5px #000000;
 
 
 }
@@ -966,16 +982,13 @@ textarea::placeholder {
     margin-right: 20px;
 }
 
-
-@media(max-width:830px) {
-
-
+@media(max-width: 1250px) {
     .navbar {
         width: 100vw;
         height: 60px;
         border-radius: 0;
         justify-content: flex-end;
-        padding-right: 20px;
+        padding-right: 5px;
     }
 
     .menu-toggle {
@@ -989,11 +1002,59 @@ textarea::placeholder {
         /* começa fora da tela */
         height: 600px;
         width: 200px;
-        background: rgba(31, 0, 31, 0.98);
+        background: #211824;
         flex-direction: column;
         gap: 0;
         padding: 40px 0;
-        box-shadow: -4px 0 20px rgba(0, 0, 0, 0.3);
+        -webkit-box-shadow: 5px 5px 15px 5px #000000;
+        box-shadow: 5px 5px 15px 5px #000000;
+        display: flex;
+        z-index: 1500;
+        align-items: center;
+        transition: right 0.4s cubic-bezier(.4, 2, .3, 1);
+    }
+
+    .nav-links.show {
+        right: 0;
+        /* anima para dentro */
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+        text-align: center;
+    }
+}
+
+
+
+@media(max-width:830px) {
+
+
+    .navbar {
+        width: 100vw;
+        height: 60px;
+        border-radius: 0;
+        justify-content: flex-end;
+       
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 60px;
+        right: -220px;
+        /* começa fora da tela */
+        height: 600px;
+        width: 200px;
+        background: #211824;
+        flex-direction: column;
+        gap: 0;
+        padding: 40px 0;
+        -webkit-box-shadow: 5px 5px 15px 5px #000000;
+        box-shadow: 5px 5px 15px 5px #000000;
         display: flex;
         z-index: 1500;
         align-items: center;
@@ -1018,7 +1079,6 @@ textarea::placeholder {
 
 
     .inicio-section {
-        height: 950px;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
@@ -1031,12 +1091,21 @@ textarea::placeholder {
         text-align: center;
     }
 
-    .inicio-content h1 {
-        font-size: 75px;
+    .inicio-content {
+        flex-direction: column;
     }
 
-    .inicio-content span {
-        font-size: 40px;
+    .inicio-content h1 {
+        font-size: 55px;
+    }
+
+    .inicio-content span { 
+        font-size: 35px;
+    }
+
+
+    .inicio-content p {
+        font-size: 35px;
     }
 
     .social-links {
@@ -1055,14 +1124,6 @@ textarea::placeholder {
     }
 
 
-    .sobre-section {
-        padding: 30px;
-    }
-
-    .sobre-container {
-        width: 100%;
-        height: 705px;
-    }
 
     .sobre-content h2 {
         margin-top: 15px;
@@ -1071,32 +1132,28 @@ textarea::placeholder {
     }
 
     .sobre-content p {
-        font-size: 16px;
+        font-size: 17px;
         margin: 15px;
     }
 
-    .habilidades-container {
-        width: 100%;
+    .curriculo a img {
+        width: 30px;
     }
+
+
+
+
+
 
     .habilidades-container h2 {
         font-size: 40px;
     }
 
-    .habilidades-content {
-        gap: 70px;
-    }
 
-    .card {
-        width: 250px;
-        height: 250px;
-    }
 
-    .card-content {
-        width: 210px;
-        height: 210px;
-        gap: 13px;
-    }
+
+
+
 
     .card-content:hover {
         transform: scale(1.17);
@@ -1110,36 +1167,14 @@ textarea::placeholder {
         width: 150px;
     }
 
-    .formacao-section {
-        padding: 30px;
-        height: 830px;
-    }
+
+
 
     .formacao-section h2 {
         font-size: 40px;
     }
 
 
-    .formacao-card {
-        padding: 20px;
-        height: 335px;
-    }
-
-    .formacao-container {
-        width: 100%;
-    }
-
-    .formacao-card-content h3 {
-        font-size: 20px;
-    }
-
-    .formacao-card-content span {
-        font-size: 14px;
-    }
-
-    .formacao-card p {
-        font-size: 13px;
-    }
 
     .certificados-section {
         padding: 30px;
@@ -1179,6 +1214,7 @@ textarea::placeholder {
 
     .projetos-cards {
         height: 320px;
+
     }
 
 
@@ -1231,11 +1267,7 @@ textarea::placeholder {
     }
 
 
-    .contato-section {
-        padding: 30px;
-        justify-content: flex-start;
-        height: 750px;
-    }
+
 
     .contato-container {
         width: 100%;
