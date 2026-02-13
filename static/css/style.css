@@ -332,8 +332,7 @@ body {
     flex-direction: column;
     gap: 10px;
     width: 100%;
-    user-select: none;
-    -webkit-user-drag: none;
+   -webkit-tap-highlight-color: transparent;
 }
 
 .curriculo a img {
@@ -659,8 +658,7 @@ body {
     padding: 15px;
     -webkit-box-shadow: 5px 5px 15px 5px #000000;
     box-shadow: 5px 5px 15px 5px #000000;
-     user-select: none;
-    -webkit-user-drag: none;
+     
 
 }
 
@@ -690,7 +688,8 @@ body {
     display: block;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-     user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
     -webkit-user-drag: none;
 }
 
